@@ -5,7 +5,11 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-
+app.get("/")
+async def mainpage():
+    return {
+        helloworld
+    }
 app.get("/server-list")
 def serverlist():
     return {
